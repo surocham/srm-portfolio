@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="heart-shine-svgrepo-com.svg" type="image/x-icon">
-    <title>suami medeiros ♡</title>
-    <meta name="description" content="suami medeiros portfolio - discord bots, and data services.">
+    <title>suami medeiros ♡ analista de dados</title>
+    <meta name="description" content="suami medeiros - analista de dados">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -17,19 +17,19 @@
             theme: {
                 extend: {
                     colors: {
-                        background: 'hsl(320, 20%, 96%)',
-                        foreground: 'hsl(240, 10%, 20%)',
-                        card: 'hsl(0, 0%, 100%)',
-                        'card-foreground': 'hsl(240, 10%, 15%)',
-                        primary: '	hsl(327, 80%, 65%)',
-                        'primary-foreground': 'hsl(0, 0%, 100%)',
-                        secondary: 'hsl(320, 15%, 92%)',
-                        'secondary-foreground': 'hsl(240, 10%, 15%)',
-                        muted: 'hsl(320, 15%, 90%)',
-                        'muted-foreground': 'hsl(240, 5%, 45%)',
-                        accent: '	hsl(327, 80%, 65%)',
-                        'accent-foreground': 'hsl(0, 0%, 100%)',
-                        border: 'hsl(320, 20%, 85%)',
+                        background: '#FFF',
+                        foreground: '#2E2E38',
+                        card: '#FFFFFF',
+                        'card-foreground': '#25252E',
+                        primary: '#EAB3BA',
+                        'primary-foreground': '#FFFFFF',
+                        secondary: '#566B73',
+                        'secondary-foreground': '#25252E',
+                        muted: '#E8E2E7',
+                        'muted-foreground': '#737373',
+                        accent: '#EAB3BA',
+                        'accent-foreground': '#FFFFFF',
+                        border: '#E1D8DF',
                     },
                     fontFamily: {
                         sans: ['Inter', 'system-ui', 'sans-serif'],
@@ -45,13 +45,13 @@
     </script>
     <style>
         .gradient-bg {
-            background: linear-gradient(135deg, hsl(328, 60%, 29%) 0%, 	hsl(327, 80%, 65%) 100%);
+            background: #F5F5F5;
         }
 
         .pink-circle-icon {
             width: 24px;
             height: 24px;
-            background: 	hsl(327, 80%, 65%);
+            background: #EAB3BA;
             border-radius: 50%;
             display: inline-flex;
             align-items: center;
@@ -72,18 +72,20 @@
         }
 
         .nav-button.active {
-            background: 	hsl(327, 80%, 65%);
-            color: hsl(0, 0%, 100%);
+            background: #EAB3BA;
+            color: #566B73;
         }
 
         .nav-button:not(.active) {
-            background: hsl(320, 15%, 92%);
-            color: hsl(240, 10%, 15%);
+            background: #F5F5F5;
+            color: #EAB3BA;
+            border-color: #566B73;
         }
 
         .nav-button:not(.active):hover {
-            background: 	hsl(327, 80%, 65%);
-            color: hsl(0, 0%, 100%);
+            background: 	#fff;
+            color: #EAB3BA;
+            border-color: #566B73;
         }
 
         .tab-content {
@@ -102,17 +104,18 @@
         <header class="text-center py-8">
             <div class="flex justify-center items-center mb-4">
                 <h1 class="text-3xl font-light text-foreground">
-                    <span class="text-primary font-medium">suami rocha de medeiros</span> ♡
+                    <span class="text-primary font-medium">suami evelin rocha de medeiros</span> ♡
                 </h1>
             </div>
 
+            <!-- Nav Button -->
             <div class="flex justify-center space-x-2">
                 <button onclick="showTab('home')" id="home-tab"
-                    class="nav-button active px-6 py-2 rounded-full text-sm font-medium">
+                    class="nav-button active px-6 py-2 rounded-full text-sm font-medium hover:border transition-all duration-200 hover-scale">
                     home
                 </button>
                 <button onclick="showTab('work')" id="work-tab"
-                    class="nav-button px-6 py-2 rounded-full text-sm font-medium">
+                    class="nav-button px-6 py-2 rounded-full text-sm font-medium hover:border transition-all duration-200 hover-scale">
                     work
                 </button>
             </div>
@@ -122,12 +125,12 @@
             <!-- Home Tab -->
             <div id="home-content" class="tab-content active space-y-6">
                 <!-- Hero Section -->
-                <div class="gradient-bg rounded-2xl p-8 text-center text-white shadow-lg">
-                    <h2 class="text-2xl font-medium mb-3">need impactful data visualizations?</h2>
-                    <p class="text-white/90 mb-6">let's discuss your project. DM for inquiries. ♡</p>
+                <div class="gradient-bg rounded-2xl p-8 text-center text-secondary shadow-lg">
+                    <h2 class="text-2xl font-medium mb-3">BI & Analytics</h2>
+                    <p class="text/90 mb-6">pronta para transformar seus dados em decisões inteligentes ♡</p>
                     <button onclick="showTab('work')"
-                        class="bg-white/20 hover:bg-white/30 text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 hover-scale">
-                        view my work
+                        class="bg-primary hover:bg-white text-secondary px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 hover-scale border">
+                        veja meus projetos
                     </button>
                 </div>
 
@@ -137,16 +140,17 @@
                         <div class="pink-circle-icon">
                             <i data-lucide="heart" class="w-3 h-3 text-white"></i>
                         </div>
-                        <h3 class="text-lg font-medium text-foreground">welcome to my page! ♡</h3>
+                        <h3 class="text-lg font-medium text-foreground">welcome ♡</h3>
                     </div>
                     <div class="space-y-4 text-muted-foreground text-sm leading-relaxed">
-                        <p>hi! i am <span class="text-primary font-semibold">suami</span> combining analysis with
-                            storytelling, transforming data into visual narratives that are both insightful and
-                            beautifully clear. ♡</p>
-                        <p>i hold a degree in Systems Analysis and Development and am specializing in Data Analysis at
-                            FIAP. I complement my technical foundation with independent courses in Machine Learning,
-                            Statistics and Python. ♡</p>
-                        <p>i love merging logic and creativity ♡</p>
+                        <p>Oi! sou a <span class="text-primary font-semibold">suami</span>, transformando dados em 
+                            narrativas visuais ao mesmo tempo perspicazes e lindamente
+                        claro. ♡</p>
+                        <p>Sou graduada em Análise e Desenvolvimento de Sistemas e estou me especializando em Análise 
+                            de Dados na FIAP. Complemento
+                        minha base técnica com cursos independentes em SQL, Excel, Power BI, R, Machine Learning, 
+                        Estatística e Python. ♡</p>
+                        <p>adoro mesclar lógica e criatividade ♡</p>
                     </div>
                 </div>
 
@@ -189,41 +193,41 @@
                     </div>
                 </div>
 
-
+                <!-- Data -->
                 <div class="bg-card p-6 shadow-sm rounded-lg border">
                     <div class="flex items-center mb-4">
                         <div class="pink-circle-icon">
                             <i data-lucide="bar-chart-3" class="w-3 h-3 text-white"></i>
                         </div>
-                        <h3 class="text-lg font-medium text-foreground">stats ♡</h3>
+                        <h3 class="text-lg font-medium text-foreground">dados ♡</h3>
                     </div>
                     <div class="grid grid-cols-2 gap-4">
                         <div class="text-center">
                             <div class="text-2xl font-bold text-primary">4</div>
-                            <div class="text-xs text-muted-foreground">works completed</div>
+                            <div class="text-xs text-muted-foreground">📈 projetos concluídos </div>
                         </div>
                         <div class="text-center">
                             <div class="text-2xl font-bold text-primary">10</div>
-                            <div class="text-xs text-muted-foreground">coding projects</div>
+                            <div class="text-xs text-muted-foreground">🖥️ projetos em código </div>
                         </div>
                         <div class="text-center">
                             <div class="text-2xl font-bold text-primary">∞</div>
-                            <div class="text-xs text-muted-foreground">cups of coffee</div>
+                            <div class="text-xs text-muted-foreground">☕ xícaras de café </div>
                         </div>
                         <div class="text-center">
                             <div class="text-2xl font-bold text-primary">3+</div>
-                            <div class="text-xs text-muted-foreground">bootcamps</div>
+                            <div class="text-xs text-muted-foreground">⌨️ bootcamps </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Server Join Section -->
-                <div class="gradient-bg rounded-2xl p-8 text-center text-white shadow-lg">
-                    <h3 class="text-xl font-medium mb-3">Access my server</h3>
-                    <p class="text-white/90 mb-6 text-sm"> custom data solutions! ♡</p>
-                    <button onclick="window.open('https://discord.gg/n5e8HHVCbF', '_blank')"
-                        class="bg-white/20 hover:bg-white/30 text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 hover-scale">
-                        click here
+                <div class="bg-secondary rounded-2xl p-8 text-center text-white shadow-lg">
+                    <h3 class="text-xl text-primary font-medium mb-3">Acesse a comunidade que faço parte</h3>
+                    <p class="text-white/90 mb-6 text-sm"> seja member e contribua! ♡</p>
+                    <button onclick="window.open('https://discord.gg/he4rt', '_blank')"
+                        class="bg-primary hover:bg-primary text-secondary px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 hover-scale">
+                        quero fazer parte também
                     </button>
                 </div>
 
@@ -232,11 +236,11 @@
                 </p>
             </div>
 
-            <!-- Commissions Tab -->
+            <!-- Work Tab -->
             <div id="work-content" class="tab-content space-y-6">
                 <!-- Hero Section -->
                 <div class="gradient-bg rounded-2xl p-8 text-center text-white shadow-lg">
-                    <h2 class="text-2xl font-medium mb-3">see my past work/projects</h2>
+                    <h2 class="text-2xl text-secondary font-medium mb-3">veja todos os meus projetos</h2>
                 </div>
 
 
@@ -272,7 +276,7 @@
                     </a>
                 </div>
 
-
+                <!-- List -->
                 <div class="bg-card p-6 shadow-sm rounded-lg border">
                     <h3 class="text-lg font-medium text-foreground mb-6 text-center">how does it work? ♡</h3>
                     <div class="space-y-4">
@@ -319,11 +323,11 @@
 
                 <!-- Ready to Start CTA -->
                 <div class="gradient-bg rounded-2xl p-8 text-center text-white shadow-lg">
-                    <h3 class="text-xl font-medium mb-3">ready to start your project?</h3>
-                    <p class="text-white/90 mb-6 text-sm">let's create something special together!</p>
-                    <button onclick="window.open('https://discord.gg/HEPTNajSB4', '_blank')"
-                        class="bg-white/20 hover:bg-white/30 text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 hover-scale">
-                        get in touch ♡ </button>
+                    <h3 class="text-xl text-secondary font-medium mb-3">precisa de ajuda?</h3>
+                    <p class="text-secondary mb-6 text-sm">me envie um email</p>
+                    <button onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=suamirochati@gmail.com&su=Contato%20Portfólio', '_blank')"
+                        class="bg-primary text-white  hover:border text-primary px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 hover-scale">
+                         enviar email no gmail ♡ </button>
                 </div>
             </div>
             <script>
@@ -356,7 +360,7 @@
   bottom: 15px;
   left: 15px;
   background: white;
-  color: hsl(327, 80%, 65%);
+  color: #EAB3BA;
   padding: 8px 16px;
   border-radius: 9999px; /* perfect pill */
   font-family: 'Arial Rounded MT Bold', 'Arial', sans-serif;
