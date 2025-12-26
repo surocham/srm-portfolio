@@ -316,9 +316,9 @@
                     <h3 class="text-xl text-secondary font-medium mb-3">Precisa de ajuda?</h3>
         
                     <button
-                        onclick="sendEmail"
+                        onclick="sendEmail()"
                         class="bg-primary text-secondary  hover:border text-primary px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 hover-scale">
-                        Enviar email ♡</button>
+                        Copiar email ♡</button>
                 </div>
 
                 <!-- End -->
@@ -337,9 +337,9 @@
                 window.open('https://discord.gg/he4rt', '_blank');
             }
 
-            // Send email
+            // Copy email
             function sendEmail(){
-                window.open('https://mail.google.com/mail/?view=cm&fs=1&to=suamirochati@gmail.com&su=Contato%20Portfólio', '_blank')
+                navigator.clipboard.writeText('suamirochati@gmail.com').then(() => alert('Email copiado!'))
             }
 
         </script>
