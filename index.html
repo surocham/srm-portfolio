@@ -9,7 +9,7 @@
     <meta name="description" content="suami medeiros - analista de dados">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <script>
@@ -32,7 +32,7 @@
                         border: '#FEEFEF',
                     },
                     fontFamily: {
-                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        sans: ['Google Sans Flex', 'system-ui', 'sans-serif'],
                     },
                     borderRadius: {
                         'lg': '12px',
@@ -83,7 +83,7 @@
         <header class="text-center py-8">
             <div class="flex justify-center items-center mb-4">
                 <h1 class="text-3xl font-light text-foreground">
-                    <span class="text-primary font-medium">Suami Evelin Rocha de Medeiros</span> ♡
+                    <span class="text-primary font-medium">Suami Evelin Rocha de Medeiros</span>
                 </h1>
             </div>
         </header>
@@ -109,7 +109,7 @@
                     <div class="pink-circle-icon">
                         <i data-lucide="heart" class="w-3 h-3 text-white"></i>
                     </div>
-                    <h3 class="text-lg font-medium text-foreground">Sobre mim ♡</h3>
+                    <h3 class="text-lg font-medium text-foreground">Sobre mim</h3>
                 </div>
                 <div class="space-y-4 text-muted-foreground text-sm leading-relaxed">
                     <p>Oi! sou a <span class="text-primary font-semibold">Suami</span>, sou uma profissional que trabalha 
@@ -138,14 +138,21 @@
                     </p>
 
                 </div>
-                <div class=" mt-6">
+                <div class="flex mt-6 space-x-4 justify-center">
                     <a 
-                    class="shadow-lg text-primary rounded-2xl bg-secondary p-4"
-                    href="assets/cv_SUAMI EVELIN ROCHA DE MEDEIROS_data_ptbr.pdf" 
+                    class="shadow-lg text-secondary rounded-2xl bg-primary p-4 "
+                    href="assets/cv_SUAMI_EVELIN_ROCHA_DE_MEDEIROS_ptbr.pdf" 
                     download="Analista_Junior_Suami_Evelin_Rocha_de_Medeiros.pdf">
-                        Ver currículo
+                        Ver currículo em pt-br 🇧🇷
+                    </a>
+                    <a 
+                    class="shadow-lg text-secondary rounded-2xl bg-primary p-4"
+                    href="assets/cv_SUAMI_EVELIN_ROCHA_DE_MEDEIROS_en.pdf" 
+                    download="Analista_Junior_Suami_Evelin_Rocha_de_Medeiros.pdf">
+                        Ver currículo em en-us 🇺🇸
                     </a>
                 </div>
+                
             </div>
 
             <!-- My Socials -->
@@ -158,6 +165,10 @@
                 </div>
                 <div class="flex justify-center space-x-4 text-muted-foreground">
             
+                    <a href="https://open.substack.com/pub/suamirocham/p/minha-jornada-na-area-de-dados-um?r=288zoq&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true" target="_blank" rel="noopener noreferrer"
+                        class="hover:text-primary transition-colors">
+                        <i data-lucide="bookmark-plus" class="w-5 h-5"></i>
+                    </a>
                     <a href="https://www.instagram.com/suamimedeiros/" target="_blank" rel="noopener noreferrer"
                         class="hover:text-primary transition-colors">
                         <i data-lucide="instagram" class="w-5 h-5"></i>
@@ -186,7 +197,7 @@
                 <h3 class="text-xl font-medium mb-3 text-primary">Conheça a He4rt</h3>
                 <p class=" mb-6 text-sm text-primary"> Projetos open source e eventos ♡</p>
                 <button onclick="openDiscord()"
-                    class="shadow-lg text-primary rounded-2xl bg-secondary p-4">
+                    class="shadow-lg text-secondary rounded-2xl bg-primary p-4">
                     Fazer parte
                 </button>
             </div>
@@ -237,29 +248,24 @@
                         </a>
                         <a href="https://github.com/surocham/santander_etl_ia" target="_blank" rel="noopener noreferrer">
                             <div class="bg-card p-6 shadow-sm hover-scale transition-all duration-200 rounded-lg border">
-                                <h3 class="text-lg font-medium text-foreground mb-2">Pipeline ETL com IA Generativa para
-                                    Marketing Bancário!</h3>
-                                <p class="text-sm text-muted-foreground mb-4">Um sistema ETL completo para personalização de
-                                    comunicação bancária usando Google Gemini AI!
+                                <h3 class="text-lg font-medium text-foreground mb-2">Marketing Bancário!</h3>
+                                <p class="text-sm text-muted-foreground mb-4">Um sistema ETL completo.
                                 </p>
                             </div>
                         </a>
                         <a href="https://github.com/surocham/rede_neural_nmist" target="_blank" rel="noopener noreferrer">
                             <div class="bg-card p-6 shadow-sm hover-scale transition-all duration-200 rounded-lg border">
                                 <h3 class="text-lg font-medium text-foreground mb-2">Rede Neural NMIST</h3>
-                                <p class="text-sm text-muted-foreground mb-4">Implementação de uma rede neural para
-                                    reconhecimento de dígitos.</p>
+                                <p class="text-sm text-muted-foreground mb-4">Implementação de rede neural.</p>
                             </div>
                         </a>
 
                         <a href="https://github.com/surocham/dashboard_de_vendas_xbox" target="_blank"
                             rel="noopener noreferrer">
                             <div class="bg-card p-6 shadow-sm hover-scale transition-all duration-200 rounded-lg border">
-                                <h3 class="text-lg font-medium text-foreground mb-2">Dashboard de Vendas de Assinaturas Xbox
+                                <h3 class="text-lg font-medium text-foreground mb-2">Vendas de Assinaturas
                                 </h3>
-                                <p class="text-sm text-muted-foreground mb-4">Mostra o comparativo de vendas de assinaturas
-                                    do EA Play Games e do Minecraft.
-                                    custom branding</p>
+                                <p class="text-sm text-muted-foreground mb-4">Dashboard</p>
                             </div>
                         </a>
 
@@ -267,47 +273,32 @@
                             rel="noopener noreferrer">
                             <div class="bg-card p-6 shadow-sm hover-scale transition-all duration-200 rounded-lg border">
                                 <h3 class="text-lg font-medium text-foreground mb-2">Planejador de viajens</h3>
-                                <div class="text-sm text-muted-foreground mb-4">Criado com banco de dados NoSql MongoDB
+                                <div class="text-sm text-muted-foreground mb-4">Utiliando MongoDB
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/surocham/rosa_claro_total_rstheme" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="bg-card p-6 shadow-sm hover-scale transition-all duration-200 rounded-lg border">
+                                <h3 class="text-lg font-medium text-foreground mb-2">Rosa Claro Total</h3>
+                                <div class="text-sm text-muted-foreground mb-4">RStudio Theme
                                 </div>
                             </div>
                         </a>
                     </div>
                 </div>
 
-                <!-- List -->
+                <!-- List Top 5 articles -->
                 <div class="bg-card p-6 shadow-sm rounded-lg border">
-                    <h3 class="text-lg font-medium text-foreground mb-6 text-center">Processo mental ♡</h3>
+                    <h3 class="text-lg font-medium text-foreground mb-6 text-center">Top 5 artigos que você deveria ler</h3>
                     <div class="space-y-4">
                         <div class="flex items-start space-x-4">
                             <div
-                                class="flex-shrink-0 text-secondary w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground text-sm font-medium">
-                                1</div>
+                                class="flex-shrink-0 text-secondary w-8 h-5 rounded-full flex items-center justify-center text-primary-foreground text-sm font-medium">
+                                💗</div>
                             <div>
-                                <p class="text-sm text-muted-foreground">Entendo o problema e o contexto do negócio.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <div
-                                class="flex-shrink-0 w-8 h-8 text-secondary bg-primary rounded-full flex items-center justify-center text-primary-foreground text-sm font-medium">
-                                2</div>
-                            <div>
-                                <p class="text-sm text-muted-foreground">Faço perguntas e valido hipóteses</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <div
-                                class="flex-shrink-0 w-8 h-8 text-secondary bg-primary rounded-full flex items-center justify-center text-primary-foreground text-sm font-medium">
-                                3</div>
-                            <div>
-                                <p class="text-sm text-muted-foreground">Analiso os dados ou requisitos técnicos</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <div
-                                class="flex-shrink-0 w-8 h-8 text-secondary bg-primary rounded-full flex items-center justify-center text-primary-foreground text-sm font-medium">
-                                4</div>
-                            <div>
-                                <p class="text-sm text-muted-foreground">Desenvolvo a solução de forma incremental</p>
+                                <a href="https://suamirocham.substack.com/p/minha-jornada-na-area-de-dados-um" class="text-sm text-muted-foreground">Minha Jornada na Área de Dados: Um Guia Para Quem Está Começando </a>
                             </div>
                         </div>
                     </div>
@@ -319,13 +310,13 @@
         
                     <button
                         onclick="sendEmail()"
-                        class="shadow-lg text-primary rounded-2xl bg-secondary p-4">
-                        Copiar email ♡</button>
+                        class="shadow-lg text-secondary rounded-2xl bg-primary p-4">
+                        Copiar email</button>
                 </div>
 
                 <!-- End -->
                 <p class="text-center text-xs text-muted-foreground mt-4">
-                    ♡ ♡ Feito com muito amor e pixels rosa ♡ ♡
+                    Feito com muito amor.
                 </p>
             </div>
         </div>
